@@ -34,19 +34,18 @@ function App() {
   const initializeAOS = () => {
     Aos.init({
       duration: 1000,
-      once: true,
+      once: false,
     });
     Aos.refresh();
   };
 
   return (
     <div>
-      {/* {loading && <Loading />} */}
+      {loading && <Loading />}
       <Header />
-      <div className="pt-20">
+      <div className="pt-23">
         <Outlet />
       </div>
-
       <Footer />
     </div>
   );

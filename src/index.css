@@ -5,15 +5,43 @@
   margin: 0 auto;
   padding: 0 1rem;
 }
+body {
+  overflow-x: hidden;
+}
 .active {
   color: #a17f4a;
+}
+.animated-bg {
+  --color-3: #ebd8bc;
+  --color-1: #debe99;
+  --color-2: #eabb75;
+  --color-4: #deba90;
+
+  animation: backgroundAnimation 6s ease-in-out infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: var(--color-1);
+  }
+  25% {
+    background-color: var(--color-2);
+  }
+  50% {
+    background-color: var(--color-3);
+  }
+  75% {
+    background-color: var(--color-4);
+  }
+  100% {
+    background-color: var(--color-1);
+  }
 }
 
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: Unbounded;
-  /* font-family: Nato Sans; */
 }
 
 @keyframes spin {

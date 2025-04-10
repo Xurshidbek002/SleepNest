@@ -4,5 +4,10 @@
     "collection": "Collection",
     "about": "About Us",
     "contact": "Contact"
+  },
+  "home": {
+    "top": "Environment",
+    "title": "Clean sleep",
+    "description": "Products"
   }
 }

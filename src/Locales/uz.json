@@ -4,5 +4,10 @@
     "collection": "Kolleksiya",
     "about": "Biz haqimizda",
     "contact": "Aloqa"
+  },
+  "home": {
+    "top": "Atrof-muhit",
+    "title": "Toza uyqu",
+    "description": "Mahsulotlar"
   }
 }

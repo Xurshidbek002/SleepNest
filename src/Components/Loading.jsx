@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 const Loading = () => {
   const {t} = useTranslation();
   return (
-    <div className="fixed inset-0 bg-[#141024]/90 backdrop-blur-sm z-50 flex items-center justify-center">
+    <div className="fixed inset-0 bg-[#141024]/90 backdrop-blur-sm z-500000 flex items-center justify-center">
       <div className="relative w-50 h-50">
         <div className="absolute inset-2 rounded-full border-5 border-transparent border-t-[#e6e682] border-r-[#d89e38] animate-spin"></div>
         <div className="absolute inset-5 rounded-full border-5 border-transparent border-b-[#d3ab3d] border-l-[#bbe13e] animate-spin animation-delay-200"></div>
