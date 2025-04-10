@@ -1,8 +1,6 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 
 const Loading = () => {
-  const {t} = useTranslation();
   return (
     <div className="fixed inset-0 bg-[#141024]/90 backdrop-blur-sm z-500000 flex items-center justify-center">
       <div className="relative w-50 h-50">

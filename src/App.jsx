@@ -17,12 +17,12 @@ function App() {
     if (document.readyState === "complete") {
       setTimeout(() => {
         setLoading(false);
-        initializeAOS(); // Loading tugagandan keyin AOS ni ishga tushiramiz
+        //initializeAOS(); // Loading tugagandan keyin AOS ni ishga tushiramiz
       }, 1000);
     } else {
       window.addEventListener("load", () => {
         handleLoad();
-        initializeAOS(); // Loading tugagandan keyin AOS ni ishga tushiramiz
+        //initializeAOS(); // Loading tugagandan keyin AOS ni ishga tushiramiz
       });
     }
 
@@ -31,13 +31,13 @@ function App() {
     };
   }, []);
 
-  const initializeAOS = () => {
-    Aos.init({
-      duration: 1000,
-      once: false,
-    });
-    Aos.refresh();
-  };
+  // const initializeAOS = () => {
+  //   Aos.init({
+  //     duration: 1000,
+  //     once: false,
+  //   });
+  //   Aos.refresh();
+  // };
 
   return (
     <div>
