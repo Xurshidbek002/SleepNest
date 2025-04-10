@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import Pages from "./Components/Pages";
 import Loading from "./Components/Loading";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Outlet } from "react-router-dom";
 
 function App() {
   const [loading, setLoading] = useState(true);
-  
+
   useEffect(() => {
     const handleLoad = () => {
       setLoading(false);
@@ -41,9 +41,12 @@ function App() {
 
   return (
     <div>
-      {loading && <Loading />}
+      {/* {loading && <Loading />} */}
       <Header />
-      <Pages />
+      <div className="pt-20">
+        <Outlet />
+      </div>
+
       <Footer />
     </div>
   );

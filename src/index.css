@@ -5,10 +5,15 @@
   margin: 0 auto;
   padding: 0 1rem;
 }
+.active {
+  color: #a17f4a;
+}
 
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: Unbounded;
+  /* font-family: Nato Sans; */
 }
 
 @keyframes spin {
