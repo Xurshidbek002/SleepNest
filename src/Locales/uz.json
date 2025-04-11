@@ -43,5 +43,37 @@
     "title": "Ekologik toza uyqu mahsulotlari",
     "text": "ko‘p yillardan buyon butun dunyo bo‘ylab foydalaniladigan paxta matolarini ishlab chiqaruvchi kompaniya bo‘lib kelmoqda",
     "btn": "Kolleksiya"
+  },
+  "winter": {
+    "titlesup": "Qishki Kollektsiya",
+    "text": "Kategoriyasi:",
+    "left": {
+      "1": "Material:",
+      "2": "Pillowcase:",
+      "3": "To‘shak to‘qimalari:",
+      "4": "Yotoq:",
+      "5": "O‘lchami:",
+      "6": "Ishlab chiqaruvchi:"
+    },
+    "right": {
+      "1": "100% paxta flaneli",
+      "2": "50x70 sm (2 dona)",
+      "3": "260×280 sm (1 dona)",
+      "4": "160x220 sm (2 dona)",
+      "5": "Maxsus o‘lcham",
+      "6": "Ekologik toza uyqu mahsuloti"
+    },
+    "title": {
+      "1": "Kvadratlar",
+      "2": "Ikat",
+      "3": "Doiralar",
+      "4": "Geometriya Ko‘k",
+      "5": "Tropik Barglar",
+      "6": "Bambi",
+      "7": "Bizansiya",
+      "8": "Bizansiya",
+      "9": "Pat Markiz",
+      "10": "Lavanda Gullar"
+    }
   }
 }

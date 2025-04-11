@@ -13,52 +13,52 @@ const Winter = [
   {
     id: 1,
     img: img1,
-    title: "Squares",
+    title: "winter.title.1",
   },
   {
     id: 2,
     img: img2,
-    title: "Winter",
+    title: "winter.title.2",
   },
   {
     id: 3,
     img: img3,
-    title: "Winter",
+    title: "winter.title.3",
   },
   {
     id: 4,
     img: img4,
-    title: "Winter",
+    title: "winter.title.4",
   },
   {
     id: 5,
     img: img5,
-    title: "Winter",
+    title: "winter.title.5",
   },
   {
     id: 6,
     img: img6,
-    title: "Winter",
+    title: "winter.title.6",
   },
   {
     id: 7,
     img: img7,
-    title: "Winter",
+    title: "winter.title.7",
   },
   {
     id: 8,
     img: img8,
-    title: "Winter",
+    title: "winter.title.8",
   },
   {
     id: 9,
     img: img9,
-    title: "Winter",
+    title: "winter.title.9",
   },
   {
     id: 10,
     img: img10,
-    title: "Winter",
+    title: "winter.title.10",
   },
 ];
 export default Winter;

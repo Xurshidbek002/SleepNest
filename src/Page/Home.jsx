@@ -3,6 +3,9 @@ import bg from "../assets/home-img.png";
 import { useTranslation } from "react-i18next";
 import Service from "../Pages/Service";
 import QualityStart from "../Pages/QualityStart";
+import Winter from "../Pages/Winter";
+import QualityCenter from "../Pages/QualityCenter";
+import QualityBottom from "../Pages/QualityBottom";
 
 function Home() {
   const { t } = useTranslation();
@@ -41,6 +44,9 @@ function Home() {
       </div>
       <Service />
       <QualityStart />
+      <Winter />
+      <QualityCenter />
+      <QualityBottom />
     </div>
   );
 }

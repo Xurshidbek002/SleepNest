@@ -49,36 +49,36 @@ function Header() {
   return (
     <div className="fixed shadow-xl w-full z-100 bg-white py-3">
       <div className="container flex justify-between items-center">
-        <a href="" className="">
+        <a href="/" className="">
           <img src={logo} alt="" className="w-40" />
         </a>
         <div className="flex items-center gap-3 md:gap-9">
-          <nav className="lg:flex items-center gap-10 hidden ">
+          <nav className="md:flex items-center gap-10 hidden ">
             <NavLink
               to="/"
               activeclassname="active"
-              className="text-gray-600 lg:text-[17px]"
+              className="text-gray-600 lg:text-[21px] md:text-[12px] "
             >
               {t("header.home")}
             </NavLink>
             <NavLink
               to="/collection"
               activeclassname="active"
-              className="text-gray-600 lg:text-[17px]"
+              className="text-gray-600 lg:text-[21px] md:text-[12px] "
             >
               {t("header.collection")}
             </NavLink>
             <NavLink
               to="/about"
               activeclassname="active"
-              className="text-gray-600 lg:text-[17px]"
+              className="text-gray-600 lg:text-[21px] md:text-[12px] "
             >
               {t("header.about")}
             </NavLink>
             <NavLink
               to="/contact"
               activeclassname="active"
-              className="text-gray-600 lg:text-[17px]"
+              className="text-gray-600 lg:text-[21px] md:text-[12px] "
             >
               {t("header.contact")}
             </NavLink>
@@ -110,7 +110,7 @@ function Header() {
               />
             ))}
           </div>
-          <button onClick={toggleMenu} className="block lg:hidden">
+          <button onClick={toggleMenu} className="block md:hidden">
             {open ? <IoMdClose size={27} /> : <RiMenu2Line size={27} />}
           </button>
         </div>
@@ -120,7 +120,7 @@ function Header() {
           initial={{ x: "-100%" }} // chapdan boshlanadi
           animate={{ x: 0 }} // o‘ngga chiqadi
           exit={{ x: "-100%" }} // yopilganda qaytadi
-          transition={{ duration: 0.4, ease: "easeInOut" }}
+          transition={{ duration: 0, ease: "easeInOut" }}
           // className="fixed top-0 left-0 w-64 h-full bg-white shadow-lg z-50"
         >
           <div className="w-full h-screen bg-white flex flex-col items-center justify-start mt-10 gap-5 z-50">

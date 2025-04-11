@@ -43,5 +43,37 @@
     "title": "Ecologically Clean Sleep Products",
     "text": "has been a company producing cotton fabrics for use all over the world for many years",
     "btn": "Collection"
+  },
+  "winter": {
+    "titlesup": "Winter Collection",
+    "text": "Category:",
+    "left": {
+      "1": "Material:",
+      "2": "Pillowcase:",
+      "3": "Bedding:",
+      "4": "Bed:",
+      "5": "Size:",
+      "6": "Manufacturer:"
+    },
+    "right": {
+      "1": "100% Cotton Flannel",
+      "2": "50x70 cm (2 pieces)",
+      "3": "260×280 cm (1 piece)",
+      "4": "160x220 cm (2 pieces)",
+      "5": "Custom Size",
+      "6": "Environmental Clean Sleep Product"
+    },
+    "title": {
+      "1": "Squares",
+      "2": "Ikat",
+      "3": "Circles",
+      "4": "Geometry Blue",
+      "5": "Tropical Leaves",
+      "6": "Bambi",
+      "7": "Byzantium",
+      "8": "Byzantium",
+      "9": "Pat Marquis",
+      "10": "Lavender Roses"
+    }
   }
 }
