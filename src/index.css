@@ -42,6 +42,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: Unbounded;
+  transition: all 0.3s ease;
 }
 
 @keyframes spin {

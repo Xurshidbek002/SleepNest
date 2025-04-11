@@ -56,35 +56,35 @@ function Header() {
           <nav className="lg:flex items-center gap-10 hidden ">
             <NavLink
               to="/"
-              activClassName="active"
+              activeclassname="active"
               className="text-gray-600 lg:text-[17px]"
             >
               {t("header.home")}
             </NavLink>
             <NavLink
               to="/collection"
-              activClassName="active"
+              activeclassname="active"
               className="text-gray-600 lg:text-[17px]"
             >
               {t("header.collection")}
             </NavLink>
             <NavLink
               to="/about"
-              activClassName="active"
+              activeclassname="active"
               className="text-gray-600 lg:text-[17px]"
             >
               {t("header.about")}
             </NavLink>
             <NavLink
               to="/contact"
-              activClassName="active"
+              activeclassname="active"
               className="text-gray-600 lg:text-[17px]"
             >
               {t("header.contact")}
             </NavLink>
             <NavLink
               to="/like"
-              activClassName="active"
+              activeclassname="active"
               className="text-gray-600 lg:text-[17px]"
             >
               <div className="relative">
@@ -127,7 +127,7 @@ function Header() {
             <NavLink
               onClick={toggleMenu}
               to="/"
-              activClassName="active"
+              activeclassname="active"
               className="text-gray-600 lg:text-[17px] text-xl"
             >
               {t("header.home")}
@@ -135,7 +135,7 @@ function Header() {
             <NavLink
               onClick={toggleMenu}
               to="/collection"
-              activClassName="active"
+              activeclassname="active"
               className="text-gray-600 lg:text-[17px] text-xl"
             >
               {t("header.collection")}
@@ -143,7 +143,7 @@ function Header() {
             <NavLink
               onClick={toggleMenu}
               to="/about"
-              activClassName="active"
+              activeclassname="active"
               className="text-gray-600 lg:text-[17px] text-xl"
             >
               {t("header.about")}
@@ -151,7 +151,7 @@ function Header() {
             <NavLink
               onClick={toggleMenu}
               to="/contact"
-              activClassName="active"
+              activeclassname="active"
               className="text-gray-600 lg:text-[17px] text-xl"
             >
               {t("header.contact")}
@@ -159,7 +159,7 @@ function Header() {
             <NavLink
               onClick={toggleMenu}
               to="/like"
-              activClassName="active"
+              activeclassname="active"
               className="text-gray-600 lg:text-[17px]"
             >
               <div className="relative">

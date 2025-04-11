@@ -1,9 +1,14 @@
 import React from "react";
 import bg from "../assets/home-img.png";
 import { useTranslation } from "react-i18next";
+import Service from "../Pages/Service";
+import QualityStart from "../Pages/QualityStart";
 
 function Home() {
   const { t } = useTranslation();
+
+ 
+ 
   return (
     <div className="">
       <div className="container ">
@@ -34,6 +39,8 @@ function Home() {
           </div>
         </div>
       </div>
+      <Service />
+      <QualityStart />
     </div>
   );
 }

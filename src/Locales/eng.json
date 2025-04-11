@@ -23,5 +23,25 @@
     "text10": "We ensure that only high-quality and environmentally safe products are produced in our manufacturing processes.",
     "text11": "In response to customer demands, the production of eco-safe and modern-design bags has been established.",
     "text12": "Our company is always happy to provide customers with quality products and a high level of service."
+  },
+  "service": {
+    "title": {
+      "1": "Free Shipping",
+      "2": "Return Guarantee",
+      "3": "24/7 Support",
+      "4": "Secure Payment"
+    },
+    "text": {
+      "1": "Free shipping on all orders",
+      "2": "30 days refund",
+      "3": "24/7 technical support",
+      "4": "All payment methods accepted"
+    }
+  },
+  "quality": {
+    "desc": "Material quality",
+    "title": "Ecologically Clean Sleep Products",
+    "text": "has been a company producing cotton fabrics for use all over the world for many years",
+    "btn": "Collection"
   }
 }

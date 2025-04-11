@@ -5,6 +5,7 @@ import Collection from "../Page/Collection";
 import About from "../Page/About";
 import Contact from "../Page/Contact";
 import Like from "../Page/Like";
+import Details from "../Components/Details";
 
 export const Router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const Router = createBrowserRouter([
       {
         path: "/like",
         element: <Like />,
+      },
+      {
+        path: "/details/:id",
+        element: <Details />,
       },
     ],
   },

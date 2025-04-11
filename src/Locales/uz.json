@@ -23,5 +23,25 @@
     "text10": "Bizning ishlab chiqarish jarayonlarimizda faqat sifatli va ekologik xavfsiz mahsulotlar ishlab chiqarishni ta’minlaymiz.",
     "text11": "Mijozlarimiz talablariga javoban, ekologik xavfsiz va zamonaviy dizaynli sumkalar ishlab chiqarish yo‘lga qo‘yilgan.",
     "text12": "Kompaniyamiz har doim mijozlariga sifatli mahsulot va yuqori darajadagi xizmat ko‘rsatishdan mamnun."
+  },
+  "service": {
+    "title": {
+      "1": "Bepul yetkazib berish",
+      "2": "Qaytarish kafolati",
+      "3": "24/7 texnik yordam",
+      "4": "Xavfsiz to‘lov"
+    },
+    "text": {
+      "1": "Barcha buyurtmalar uchun bepul yetkazib berish",
+      "2": "30 kun ichida pulni qaytarish",
+      "3": "24/7 texnik yordam xizmati",
+      "4": "Barcha to‘lov usullari qabul qilinadi"
+    }
+  },
+  "quality": {
+    "desc": "Material sifati",
+    "title": "Ekologik toza uyqu mahsulotlari",
+    "text": "ko‘p yillardan buyon butun dunyo bo‘ylab foydalaniladigan paxta matolarini ishlab chiqaruvchi kompaniya bo‘lib kelmoqda",
+    "btn": "Kolleksiya"
   }
 }
