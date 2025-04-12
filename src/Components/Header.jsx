@@ -10,6 +10,7 @@ import { RiMenu2Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import { motion } from "framer-motion";
 import { FcLike } from "react-icons/fc";
+import useLikeStore from "../store/likeStore";
 const languages = [
   { code: "uz", img: uz },
   { code: "ru", img: ru },
@@ -17,6 +18,7 @@ const languages = [
 ];
 
 function Header() {
+  const { likedItems } = useLikeStore();
   const [open, setOpen] = useState(false);
   const toggleMenu = () => {
     setOpen(!open);
@@ -48,37 +50,37 @@ function Header() {
 
   return (
     <div className="fixed shadow-xl w-full z-100 bg-white py-3">
-      <div className="container flex justify-between items-center">
+      <div className="container flex justify-between items-center gap-5">
         <a href="/" className="">
           <img src={logo} alt="" className="w-40" />
         </a>
         <div className="flex items-center gap-3 md:gap-9">
-          <nav className="md:flex items-center gap-10 hidden ">
+          <nav className="md:flex items-center md:gap-5 lg:gap-10 hidden ">
             <NavLink
               to="/"
               activeclassname="active"
-              className="text-gray-600 lg:text-[21px] md:text-[12px] "
+              className="text-gray-600 lg:text-[19px] md:text-[14px] "
             >
               {t("header.home")}
             </NavLink>
             <NavLink
               to="/collection"
               activeclassname="active"
-              className="text-gray-600 lg:text-[21px] md:text-[12px] "
+              className="text-gray-600 lg:text-[19px] md:text-[14px] "
             >
               {t("header.collection")}
             </NavLink>
             <NavLink
               to="/about"
               activeclassname="active"
-              className="text-gray-600 lg:text-[21px] md:text-[12px] "
+              className="text-gray-600 lg:text-[19px] md:text-[14px] "
             >
               {t("header.about")}
             </NavLink>
             <NavLink
               to="/contact"
               activeclassname="active"
-              className="text-gray-600 lg:text-[21px] md:text-[12px] "
+              className="text-gray-600 lg:text-[19px] md:text-[14px] "
             >
               {t("header.contact")}
             </NavLink>
@@ -89,9 +91,17 @@ function Header() {
             >
               <div className="relative">
                 <FcLike size={23} />
-                <span className="absolute -top-2 -right-2 text-[8px] text-white flex justify-center items-center rounded-full w-5 h-5 bg-gray-600/70">
-                  0
-                </span>
+                {likedItems.length > 0 && (
+                  <motion.span
+                    key={likedItems.length} 
+                    initial={{ scale: 1 }}
+                    animate={{ scale: [4, 1] }} // Avval kattalashib, keyin qaytadi
+                    transition={{ duration: 0.2, ease: "easeOut" }} // Animatsiya tezligi
+                    className="absolute -top-2 -right-2 text-[8px] text-white flex justify-center items-center rounded-full w-5 h-5 bg-gray-600/70"
+                  >
+                    {likedItems.length}
+                  </motion.span>
+                )}
               </div>
             </NavLink>
           </nav>
@@ -164,9 +174,17 @@ function Header() {
             >
               <div className="relative">
                 <FcLike size={23} />
-                <span className="absolute -top-2 -right-2 text-[8px] text-white flex justify-center items-center rounded-full w-5 h-5 bg-gray-600/70">
-                  0
-                </span>
+                {likedItems.length > 0 && (
+                  <motion.span
+                    key={likedItems.length} // Har length o'zgarganda qayta animatsiya bo'lishi uchun
+                    initial={{ scale: 1 }}
+                    animate={{ scale: [5, 2] }} // Avval kattalashib, keyin qaytadi
+                    transition={{ duration: 0.2, ease: "easeOut" }} // Animatsiya tezligi
+                    className="absolute -top-2 -right-2 text-[8px] text-white flex justify-center items-center rounded-full w-5 h-5 bg-gray-600/70"
+                  >
+                    {likedItems.length}
+                  </motion.span>
+                )}
               </div>
             </NavLink>
           </div>

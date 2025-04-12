@@ -1,64 +1,64 @@
-import img1 from "../assets/w1.jpg";
-import img2 from "../assets/w2.jpg";
-import img3 from "../assets/w3.jpg";
-import img4 from "../assets/w4.jpg";
-import img5 from "../assets/w5.jpg";
-import img6 from "../assets/w6.jpg";
-import img7 from "../assets/w7.jpg";
-import img8 from "../assets/w8.jpg";
-import img9 from "../assets/w9.jpg";
-import img10 from "../assets/w10.jpg";
+import img1 from "../assets/s1.jpg";
+import img2 from "../assets/s2.jpg";
+import img3 from "../assets/s3.jpg";
+import img4 from "../assets/s4.jpg";
+import img5 from "../assets/s5.jpg";
+import img6 from "../assets/s6.jpg";
+import img7 from "../assets/s7.jpg";
+import img8 from "../assets/s8.jpg";
+import img9 from "../assets/s9.jpg";
+import img10 from "../assets/s10.jpg";
 
 const Summer = [
   {
-    id: 1,
+    id: 21,
     img: img1,
-    title: "winter.title.1",
+    title: "summer.title.1",
   },
   {
-    id: 2,
+    id: 22,
     img: img2,
-    title: "winter.title.2",
+    title: "summer.title.2",
   },
   {
-    id: 3,
+    id: 23,
     img: img3,
-    title: "winter.title.3",
+    title: "summer.title.3",
   },
   {
-    id: 4,
+    id: 24,
     img: img4,
-    title: "winter.title.4",
+    title: "summer.title.4",
   },
   {
-    id: 5,
+    id: 25,
     img: img5,
-    title: "winter.title.5",
+    title: "summer.title.5",
   },
   {
-    id: 6,
+    id: 26,
     img: img6,
-    title: "winter.title.6",
+    title: "summer.title.6",
   },
   {
-    id: 7,
+    id: 27,
     img: img7,
-    title: "winter.title.7",
+    title: "summer.title.7",
   },
   {
-    id: 8,
+    id: 28,
     img: img8,
-    title: "winter.title.8",
+    title: "summer.title.8",
   },
   {
-    id: 9,
+    id: 29,
     img: img9,
-    title: "winter.title.9",
+    title: "summer.title.9",
   },
   {
-    id: 10,
+    id: 30,
     img: img10,
-    title: "winter.title.10",
+    title: "summer.title.10",
   },
 ];
 export default Summer;

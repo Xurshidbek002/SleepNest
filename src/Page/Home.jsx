@@ -6,6 +6,8 @@ import QualityStart from "../Pages/QualityStart";
 import Winter from "../Pages/Winter";
 import QualityCenter from "../Pages/QualityCenter";
 import QualityBottom from "../Pages/QualityBottom";
+import Autumn from "../Pages/Autumn";
+import Summer from "../Pages/Summer";
 
 function Home() {
   const { t } = useTranslation();
@@ -46,7 +48,9 @@ function Home() {
       <QualityStart />
       <Winter />
       <QualityCenter />
+      <Autumn/>
       <QualityBottom />
+      <Summer />
     </div>
   );
 }

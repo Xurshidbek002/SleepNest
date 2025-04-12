@@ -75,5 +75,37 @@
       "9": "Pat Markiz",
       "10": "Lavanda Gullar"
     }
+  },
+  "autm": {
+    "titlesup": "Kuz kolleksiyasi",
+    "text": "Kategoriyasi:",
+    "title": {
+      "1": "Safari",
+      "2": "Ko‘p rangli ametist",
+      "3": "Shivali dekoratsiyasi",
+      "4": "Emerald (AB)",
+      "5": "Malaxit qutisi",
+      "6": "Bahor hidi",
+      "7": "Kuzda osilib tushgan barglar",
+      "8": "Ko‘k shamol",
+      "9": "Ko‘k suv",
+      "10": "Plaid"
+    }
+  },
+  "summer": {
+    "titlesup": "Yoz kolleksiyasi",
+    "text": "Kategoriyasi:",
+    "title": {
+      "1": "Vintage uslubi",
+      "2": "Qaynab turgan dandelion",
+      "3": "Fransuz Rivyerasi",
+      "4": "Dolli qo‘y",
+      "5": "Alp o‘simliklari",
+      "6": "Ilhomlantiruvchi",
+      "7": "Yashil lotus",
+      "8": "Tog‘dagi makkajo‘xori",
+      "9": "Sakura shoxchasi",
+      "10": "Zaytun shoxchasi"
+    }
   }
 }

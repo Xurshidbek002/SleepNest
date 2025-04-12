@@ -75,5 +75,37 @@
       "9": "Pat Marquis",
       "10": "Lavender Roses"
     }
+  },
+  "autm": {
+    "titlesup": "Autumn Collection",
+    "text": "Category:",
+    "title": {
+      "1": "Safari",
+      "2": "Multicolor Amethyst",
+      "3": "Shivali decoration",
+      "4": "Emerald (AB)",
+      "5": "Malachite Box",
+      "6": "Scents of Spring",
+      "7": "Falling autumn leaves",
+      "8": "Blue Breeze",
+      "9": "Blue Water",
+      "10": "Plaid"
+    }
+  },
+  "summer": {
+    "titlesup": "Summer Collection",
+    "text": "Category:",
+    "title": {
+      "1": "Vintage Style",
+      "2": "rocking dandelion",
+      "3": "French Riviera",
+      "4": "Dolly the Sheep",
+      "5": "Alpine plants",
+      "6": "Inspirational",
+      "7": "Green Lotus",
+      "8": "Mountain Corn",
+      "9": "Sakura Branch",
+      "10": "Olive Branch"
+    }
   }
 }
