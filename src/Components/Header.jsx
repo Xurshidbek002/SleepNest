@@ -178,7 +178,7 @@ function Header() {
                   <motion.span
                     key={likedItems.length} // Har length o'zgarganda qayta animatsiya bo'lishi uchun
                     initial={{ scale: 1 }}
-                    animate={{ scale: [5, 2] }} // Avval kattalashib, keyin qaytadi
+                    animate={{ scale: [3, 1] }} // Avval kattalashib, keyin qaytadi
                     transition={{ duration: 0.2, ease: "easeOut" }} // Animatsiya tezligi
                     className="absolute -top-2 -right-2 text-[8px] text-white flex justify-center items-center rounded-full w-5 h-5 bg-gray-600/70"
                   >

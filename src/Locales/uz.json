@@ -107,5 +107,38 @@
       "9": "Sakura shoxchasi",
       "10": "Zaytun shoxchasi"
     }
+  },
+  "detal": {
+    "sh": "Mahsulot sharhlari",
+    "shq": "Sharhingizni qoldiring",
+    "reting": "Sizning bahoingiz",
+    "name": "Ism",
+    "email": "Elektron pochta",
+    "rew": "Sharhingiz",
+    "btn": "Sharhni yuborish",
+    "pro": "O‘xshash mahsulotlar"
+  },
+  "footer": {
+    "text": "Ecological Clean Sleep Products — bu dunyo bo‘ylab ishlatiladigan paxta matolarini ishlab chiqaruvchi kompaniya bo‘lib, ko‘p yillardan beri faoliyat yuritadi.",
+    "menu": {
+      "title": "Menyu",
+      "1": "Bosh sahifa",
+      "2": "Kolleksiya",
+      "3": "Biz haqimizda",
+      "4": "Aloqa"
+    },
+    "contact": {
+      "title": "Aloqa",
+      "1": "Buxoro, Alpomish ko‘chasi 80",
+      "2": "Email: sleepnest@gamil.com",
+      "3": "Telegram: sleepnest"
+    },
+    "sub": {
+      "title": "Elektron pochtamizga obuna bo‘ling",
+      "inp": "Elektron pochtamizga obuna bo‘ling",
+      "btn": "Obuna bo‘lish",
+      "text": "Hech bo‘lmaganda bitta ro‘yxatni tanlang.",
+      "bottom": "© 2024 Ecological Clean Sleep Products MCHJ. Barcha huquqlar himoyalangan."
+    }
   }
 }

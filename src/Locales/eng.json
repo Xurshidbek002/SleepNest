@@ -107,5 +107,38 @@
       "9": "Sakura Branch",
       "10": "Olive Branch"
     }
+  },
+  "detal": {
+    "sh": "Product Reviews",
+    "shq": "Leave your review",
+    "reting": "Your Rating",
+    "name": "Name",
+    "email": "Email",
+    "rew": "Your Review",
+    "btn": "Submit a review",
+    "pro": "Similar products"
+  },
+  "footer": {
+    "text": "Ecological Clean Sleep Products is a company that produces cotton fabrics for use all over the world for many years.",
+    "menu": {
+      "title": "Menu",
+      "1": "Home",
+      "2": "Collection",
+      "3": "About Us",
+      "4": "Contacts"
+    },
+    "contact": {
+      "title": "Contact",
+      "1": "Bukhara, st. Alpomish 80",
+      "2": "Email: sleepnest@gamil.com",
+      "3": "Telegram: sleepnest"
+    },
+    "sub": {
+      "title": "Subscribe to our email",
+      "inp": "Subscribe to our email",
+      "btn": "Subscribe",
+      "text": "Select at least one list.",
+      "bottom": "© 2024 Ecological Clean Sleep Products LLC All rights reserved."
+    }
   }
 }

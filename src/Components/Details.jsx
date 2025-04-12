@@ -43,6 +43,9 @@ const base = [
 ];
 
 function Details() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { id } = useParams();
   const { t } = useTranslation();
   const { likedItems, toggleLike } = useLikeStore(); // Like store'ni olish
@@ -68,7 +71,7 @@ function Details() {
     setTimeout(() => {
       setItem(found);
       setLoading(false);
-    }, 500);
+    }, 600);
   }, [id]);
 
   // LocalStorage’dan sharhlarni olish
@@ -103,7 +106,7 @@ function Details() {
 
   if (loading) {
     return (
-      <div className="flex flex-col items-center justify-center h-96">
+      <div className="flex flex-col items-center justify-center h-[90vh]">
         <FaSpinner className="animate-spin text-blue-500 text-[80px]" />
         <p className="mt-4 text-xl text-gray-600">loading</p>
       </div>
@@ -114,9 +117,7 @@ function Details() {
     return (
       <div className="flex flex-col gap-4 items-center justify-center h-96">
         <MdErrorOutline className="text-red-500 text-[200px]" />
-        <h1 className="text-2xl font-bold text-red-500">
-          {t("details.notfound")}
-        </h1>
+        <h1 className="text-2xl font-bold text-red-500">Malumot Yo'q</h1>
       </div>
     );
   }
@@ -147,23 +148,18 @@ function Details() {
             setOrigin(`${x}% ${y}%`);
           }}
         >
-          <h1 className="md:hidden block text-3xl text-center font-bold pt-4 pb-5">
-            {t(item?.title)}
-          </h1>
           <img
             src={item?.img}
             alt={item?.title}
             className="w-full h-full object-cover rounded-3xl transition-transform duration-300 ease-in-out"
             style={{
-              transform: isHovered ? "scale(2)" : "scale(1)",
+              transform: isHovered ? "scale(1.5)" : "scale(1)",
               transformOrigin: origin,
             }}
           />
         </div>
         <div>
-          <h1 className="hidden md:block text-3xl font-bold pt-4 pb-5">
-            {t(item?.title)}
-          </h1>
+          <h1 className=" text-3xl font-bold pt-4 pb-5">{t(item?.title)}</h1>
           <table className="w-full table-auto border border-black border-collapse">
             <tbody>
               {base.map((item) => (
@@ -188,7 +184,7 @@ function Details() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
         <div className="flex flex-col order-2 md:order-1">
           <h2 className="text-3xl md:text-4xl text-center font-bold">
-            sharhingiz
+            {t("detal.sh")}
           </h2>
           <div>
             {reviews &&
@@ -214,7 +210,6 @@ function Details() {
             ) : (
               <div className="flex flex-col justify-center items-center h-full pt-10">
                 <FaCommentSlash className="text-9xl text-gray-400" />
-                <p className="">izohlar mavjud emas</p>
               </div>
             )}
           </div>
@@ -223,10 +218,10 @@ function Details() {
         {/* form izoh qoldirish uchun */}
         <div className="flex flex-col order-1 md:order-2">
           <h2 className="text-3xl md:text-4xl text-center font-semibold">
-            sharh qoldirish
+            {t("detal.shq")}
           </h2>
           <form onSubmit={handleSubmit} className="space-y-4 p-4">
-            <label className="pl-4 text-gray-700 text-sm ">rayting</label>
+            <label className=" text-gray-700 text-sm ">{t("detal.reting")}</label>
             <div className="flex items-center space-x-2">
               {[1, 2, 3, 4, 5].map((rating) => (
                 <MdStarRate
@@ -243,7 +238,7 @@ function Details() {
               ))}
             </div>
             <div>
-              <label className="pl-4 text-gray-700 text-sm">{t("name")}</label>
+              <label className="pl-4 text-gray-700 text-sm">{t("detal.name")}</label>
               <input
                 type="text"
                 name="name"
@@ -253,7 +248,7 @@ function Details() {
               />
             </div>
             <div>
-              <label className="pl-4 text-gray-700 text-sm">{t("email")}</label>
+              <label className="pl-4 text-gray-700 text-sm">{t("detal.email")}</label>
               <input
                 type="email"
                 name="email"
@@ -263,7 +258,9 @@ function Details() {
               />
             </div>
             <div>
-              <label className="pl-4 text-gray-700 text-sm">{t("message")}</label>
+              <label className="pl-4 text-gray-700 text-sm">
+                {t("detal.rew")}
+              </label>
               <textarea
                 name="message"
                 value={formData.message}
@@ -275,9 +272,9 @@ function Details() {
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="px-6 w-full py-2 bg-blue-500 text-white rounded-lg"
+                className="px-6 w-full py-2 bg-red-500 hover:bg-red-400 text-white rounded-lg"
               >
-                {t("submit.review")}
+                {t("detal.btn")}
               </button>
             </div>
           </form>
@@ -286,7 +283,7 @@ function Details() {
 
       {/* Related products */}
       <div className="mt-10">
-        <h2 className="text-2xl font-bold">{t("related.products")}</h2>
+        <h2 className="text-2xl font-bold text-center">{t("detal.pro")}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-5">
           {getRelatedItems().map((relatedItem) => {
             const isLiked = likedItems.some(
