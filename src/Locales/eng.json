@@ -163,5 +163,14 @@
       "title": "Ways to implement creative ideas",
       "text": "What difficulties are encountered in the process of making many new discoveries..."
     }
+  },
+  "collection": {
+    "search": "Searching for...",
+    "collection": "Collection",
+    "all": "All Collection",
+    "winter": "Winter Collection",
+    "autumn": "Autumn Collection",
+    "summer": "Summer Collection",
+    "no": "No results found"
   }
 }

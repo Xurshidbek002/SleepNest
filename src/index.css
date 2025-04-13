@@ -62,3 +62,13 @@
 .animation-delay-400 {
   animation-delay: 0.4s;
 }
+
+scrolNone {
+  scrollbar-width: none; /* Firefox uchun */
+  -ms-overflow-style: none; /* Internet Explorer va Edge uchun */
+}
+
+/* Webkit brauzerlar (Chrome, Safari) uchun */
+*::-webkit-scrollbar {
+  display: none;
+}

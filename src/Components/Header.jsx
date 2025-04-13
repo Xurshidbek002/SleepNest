@@ -49,7 +49,7 @@ function Header() {
   const orderedLangs = getLangOrder();
 
   return (
-    <div className="fixed shadow-xl w-full z-100 bg-white py-3">
+    <div className="fixed shadow-md w-full z-100 bg-white py-3">
       <div className="container flex justify-between items-center gap-5">
         <a href="/" className="">
           <img src={logo} alt="" className="w-40" />

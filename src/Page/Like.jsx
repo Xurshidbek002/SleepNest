@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import useLikeStore from "../store/likeStore";
 import { FaHeart, FaHeartBroken } from "react-icons/fa";
 
 const Like = () => {
+  useLayoutEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { likedItems, toggleLike } = useLikeStore();

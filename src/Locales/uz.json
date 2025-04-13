@@ -163,5 +163,14 @@
       "title": "Ijodiy g‘oyalarni amalga oshirish yo‘llari",
       "text": "Ko‘plab yangi kashfiyotlar jarayonida duch kelinadigan qiyinchiliklar..."
     }
+  },
+  "collection": {
+    "search": "Izlash...",
+    "collection": "Kolleksiya",
+    "all": "Barcha kolleksiya",
+    "winter": "Qishgi kolleksiya",
+    "autumn": "Kuzgi kolleksiya",
+    "summer": "Yazgi kolleksiya",
+    "no": "Hech narsa topilmadi"
   }
 }

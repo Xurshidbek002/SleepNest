@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <footer className="">
+    <footer className="pt-15">
       <div className="container">
         <div className="flex items-start justify-center md:justify-between flex-wrap gap-5 py-9">
 
