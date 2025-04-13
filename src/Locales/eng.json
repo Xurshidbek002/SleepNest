@@ -175,5 +175,13 @@
     "autumn": "Autumn Collection",
     "summer": "Summer Collection",
     "no": "No results found"
+  },
+  "contact": {
+    "title": "Connection",
+    "email": "Your email",
+    "phone": "Your phone number",
+    "message": "Plase write if you have a message",
+    "btn": "Send",
+    "modal": "Successfully sent"
   }
 }

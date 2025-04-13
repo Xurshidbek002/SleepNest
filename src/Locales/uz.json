@@ -1,6 +1,6 @@
 {
   "site": {
-"loading": "Yuklanmoqda"
+    "loading": "Yuklanmoqda"
   },
   "header": {
     "home": "Bosh sahifa",
@@ -175,5 +175,13 @@
     "autumn": "Kuzgi kolleksiya",
     "summer": "Yazgi kolleksiya",
     "no": "Hech narsa topilmadi"
+  },
+  "contact": {
+    "title": "Aloqa",
+    "email": "Elektron pochtangiz",
+    "phone": "Telefon raqamingiz",
+    "message": "Xabaringiz bo‘lsa, yozing iltimos",
+    "btn": "Yuborish",
+    "modal":"Muvaffaqiyatli Yuborildi"
   }
 }
