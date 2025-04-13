@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Loading from "./Components/Loading";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import { Outlet } from "react-router-dom";
 
 function App() {
@@ -11,41 +9,35 @@ function App() {
 
   useEffect(() => {
     const handleLoad = () => {
-      setLoading(false);
+      setLoading(false); // Sayt to‘liq yuklandi, loadingni o‘chirish
     };
 
     if (document.readyState === "complete") {
+      // Agar sahifa to‘liq yuklangan bo‘lsa, darhol loadingni o‘chiramiz
       setTimeout(() => {
         setLoading(false);
-        //initializeAOS(); // Loading tugagandan keyin AOS ni ishga tushiramiz
-      }, 1000);
+      }, 1000); // 1 soniya kutish
     } else {
-      window.addEventListener("load", () => {
-        handleLoad();
-        //initializeAOS(); // Loading tugagandan keyin AOS ni ishga tushiramiz
-      });
+      // Agar sahifa hali to‘liq yuklanmagan bo‘lsa, `load` hodisasini tinglaymiz
+      window.addEventListener("load", handleLoad);
     }
 
+    // Component unmount bo‘lsa, event listenerni olib tashlash
     return () => {
       window.removeEventListener("load", handleLoad);
     };
   }, []);
 
-  // const initializeAOS = () => {
-  //   Aos.init({
-  //     duration: 1000,
-  //     once: false,
-  //   });
-  //   Aos.refresh();
-  // };
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <div>
-      {loading && <Loading />}
       <Header />
-      <div className="pt-23">
+      <main className="pt-23">
         <Outlet />
-      </div>
+      </main>
       <Footer />
     </div>
   );

@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
-import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
@@ -10,6 +9,8 @@ const Footer = () => {
     <footer className="">
       <div className="container">
         <div className="flex items-start justify-center md:justify-between flex-wrap gap-5 py-9">
+
+
           <div className="max-w-100 text-center md:text-left">
             <img
               src={logo}
@@ -20,6 +21,8 @@ const Footer = () => {
               {t("footer.text")}
             </p>
           </div>
+
+
           <div className="text-center md:text-left">
             <h2 className="font-bold mb-3 text-gray-600 uppercase text-sm">
               {t("footer.menu.title")}

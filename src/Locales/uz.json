@@ -140,5 +140,28 @@
       "text": "Hech bo‘lmaganda bitta ro‘yxatni tanlang.",
       "bottom": "© 2024 Ecological Clean Sleep Products MCHJ. Barcha huquqlar himoyalangan."
     }
+  },
+  "news": {
+    "title": "Yangiliklar",
+    "text": "Ekologik toza uyqu mahsulotlari",
+    "by": "Admin tomonidan",
+    "texts": {
+      "1": "Go‘zal vodiy tuman bilan to‘lganida, va quyosh daraxtlarimning siyrak barglariga tushganida, ichki ma'badga ozgina nurlar kiradi, men baland o‘tlar orasida o‘zimni topaman. Yerlarga yotganimda, menga minglab noma'lum o‘simliklar keladi: poyalardan hasharotlar shitirlaydi. Chivinlarning tariflab bo‘lmaydigan shakllarini ko‘rganimda, bizni o‘z suratimda yaratgan Qodir Zotning borligini his qilaman. Atrofimizda abadiy rohatda aylanib yuradigan, bizni boqib turadigan va saqlaydigan umumiy muhabbat nafasi – mana shuni his qilaman. Shunda, do‘stim, ko‘zlarimni zulmat qoplaganida, osmon va yer yuragimda jam bo‘ladi, go‘yo sevgilimning siymosidek quvvatni yutadi. Shunda men ko‘p o‘ylayman: Eh, shu his-tuyg‘ularni ifodalab bera olsam edi! Ruhimdagi barcha narsani qog‘ozga tushira olsam edi!",
+      "2": "Do‘stim – lekin bu men uchun haddan ortiq – bu manzaralarning ulug‘vorligi ostida hushimdan ketaman! Bahorning yoqimli tonglari kabi butun ruhimni ajoyib osoyishtalik qamrab oladi. Men yolg‘izman, lekin yuragimdan bu joyning ruhimga mos yaratilganidan zavq olaman.",
+      "3": "Men juda baxtliyaman, aziz do‘stim, tinchlikdagi hayot tuyg‘usi shu qadar hayratlantiryaptiki, men o‘z iste'dodimni unutib qo‘yyapman. Hozir birorta ham chizish imkonim yo‘q; lekin shu bilan birga, men hech qachon o‘zimni hozirgidek buyuk rassom deb his qilmaganman.",
+      "4": "Go‘zal vodiy tuman bilan to‘lganida, va quyosh daraxtlarimning siyrak barglariga tushganida, ichki ma'badga ozgina nurlar kiradi, men baland o‘tlar orasida o‘zimni topaman. Yerlarga yotganimda, menga minglab noma'lum o‘simliklar keladi: poyalardan hasharotlar shitirlaydi. Chivinlarning tariflab bo‘lmaydigan shakllarini ko‘rganimda, bizni o‘z suratimda yaratgan Qodir Zotning borligini his qilaman. Atrofimizda abadiy rohatda aylanib yuradigan, bizni boqib turadigan va saqlaydigan umumiy muhabbat nafasi – mana shuni his qilaman. Shunda, do‘stim, ko‘zlarimni zulmat qoplaganida, osmon va yer yuragimda jam bo‘ladi, go‘yo sevgilimning siymosidek quvvatni yutadi. Shunda men ko‘p o‘ylayman: Eh, shu his-tuyg‘ularni ifodalab bera olsam edi! Ruhimdagi barcha narsani qog‘ozga tushira olsam edi!"
+    },
+    "gadjet": {
+      "title": "Ideal gadjetlarni tanlash usullari",
+      "text": "Go‘zal vodiy tuman bilan to‘lganda va quyosh tepalikni yoritganda..."
+    },
+    "techno": {
+      "title": "Zamonaviy texnologiyalardan foydalanish",
+      "text": "Texnologiyalar hayotimizni qanday o‘zgartirayotgani haqida qiziqarli hikoyalar..."
+    },
+    "idea": {
+      "title": "Ijodiy g‘oyalarni amalga oshirish yo‘llari",
+      "text": "Ko‘plab yangi kashfiyotlar jarayonida duch kelinadigan qiyinchiliklar..."
+    }
   }
 }

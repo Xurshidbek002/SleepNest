@@ -6,6 +6,7 @@ import About from "../Page/About";
 import Contact from "../Page/Contact";
 import Like from "../Page/Like";
 import Details from "../Components/Details";
+import Product from "../Components/Product";
 
 export const Router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ export const Router = createBrowserRouter([
       {
         path: "/details/:id",
         element: <Details />,
+      },
+      {
+        path: "/product/:id",
+        element: <Product />,
       },
     ],
   },

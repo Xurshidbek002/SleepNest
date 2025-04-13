@@ -10,7 +10,7 @@ function Winter() {
   const navigate = useNavigate();
   const { likedItems, toggleLike } = useLikeStore();
 
-  const handleNavigation = (id) => {
+  const handleNavigation = (id) => {  
     navigate(`/details/${id}`);
   };
   return (

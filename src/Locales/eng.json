@@ -140,5 +140,28 @@
       "text": "Select at least one list.",
       "bottom": "© 2024 Ecological Clean Sleep Products LLC All rights reserved."
     }
+  },
+  "news": {
+    "title": "News",
+    "text": "Ecologically Clean Sleep Products",
+    "by": "By admin",
+    "texts": {
+      "1": "When the beautiful valley fills me with steam, and the meridian sun strikes the upper surface of the impenetrable leaves of my trees, and a few stray glimmers enter the inner temple, I find myself among the tall grass I leave. When I lie close to the ground, a thousand unknown plants come to me: insects rustle from among the stems. and when I am acquainted with the indescribable forms of the flies, I see the presence of the Almighty, who has formed us in his own image, and that breath of universal love which sustains and sustains us, which floats around us in eternal bliss; Then, my friend, when darkness covers my eyes, and heaven and earth settle in my heart, absorbing its power like the form of a beloved mistress, I I often think longin ly, Oh, would I describe these concepts? Put everything that lives in me on paper, as my soul is a mirror of the infinite God. can make a secret!",
+      "2": "O friend - but it is too much for my strength - I sink under the weight of the glory of these visions! A wonderful calm has taken over my whole soul, like the sweet mornings of spring, which I enjoy with all my heart I am alone, I feel the charm of being in this place created for the happiness of souls like me.",
+      "3": "I am so happy, my dear friend, that I am so engrossed in the wonderful feeling of living in peace that I neglect my talents. I am not able to draw a single stroke at present; and yet I never I feel that I have never been as great an artist as I am now.",
+      "4": "When the beautiful valley fills me with steam, and the meridian sun strikes the upper surface of the impenetrable leaves of my trees, and a few stray glimmers enter the inner temple, I find myself among the tall grass I leave. When I lie close to the ground, a thousand unknown plants come to me: insects rustle from among the stems. and when I am acquainted with the indescribable forms of the flies, I see the presence of the Almighty, who has formed us in his own image, and that breath of universal love which sustains and sustains us, which floats around us in eternal bliss; Then, my friend, when darkness covers my eyes, and heaven and earth settle in my heart, absorbing its power like the form of a beloved mistress, I I often think longingly: Oh, could I describe these concepts? Everything that lives inside me could be fully and warmly impressed on paper.Connection"
+    },
+    "gadjet": {
+      "title": "How to choose the perfect gadgets",
+      "text": "When the beautiful valley fills with steam and the meridian sun hits the hill..."
+    },
+    "techno": {
+      "title": "How to use modern technology",
+      "text": "Interesting stories about how technology changes our lives..."
+    },
+    "idea": {
+      "title": "Ways to implement creative ideas",
+      "text": "What difficulties are encountered in the process of making many new discoveries..."
+    }
   }
 }
