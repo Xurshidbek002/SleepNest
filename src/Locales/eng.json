@@ -1,4 +1,7 @@
 {
+  "site": {
+    "loading": "Loading"
+  },
   "header": {
     "home": "Home",
     "collection": "Collection",

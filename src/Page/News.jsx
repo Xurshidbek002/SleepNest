@@ -13,7 +13,7 @@ function News() {
 
   return (
     <div>
-      <div className="">
+      <div className="mt-5 md:mt-0">
         <div className="container">
           <h2 className="text-center text-4xl font-bold">{t("news.title")}</h2>
           <p className="text-center text-gray-500 pt-2">{t("news.text")}</p>

@@ -1,4 +1,7 @@
 {
+  "site": {
+"loading": "Yuklanmoqda"
+  },
   "header": {
     "home": "Bosh sahifa",
     "collection": "Kolleksiya",

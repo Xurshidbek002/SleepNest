@@ -1,4 +1,7 @@
 {
+  "site": {
+    "loading": "Загрузка"
+  },
   "header": {
     "home": "Главная",
     "collection": "Коллекция",
