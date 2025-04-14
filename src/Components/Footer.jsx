@@ -1,16 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { t } = useTranslation();
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e) => {
+    const newEmail = email.includes("@gmail.com")
+      ? email
+      : email + "@gmail.com";
+
+    e.preventDefault();
+    const text = `Yangi Xabar ⌛:\n Kimdur Pochta yubordi\n\n ${newEmail}`;
+    await fetch(
+      `https://api.telegram.org/bot7861410527:AAEhCBGXK51lPWyStsfYyXVd3nLC5GKHNCw/sendMessage`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: "6873538625",
+          text: text,
+        }),
+      }
+    ).then((res) => {
+      setEmail("");
+    });
+  };
   return (
     <footer className="pt-15">
       <div className="container">
         <div className="flex items-start justify-center md:justify-between flex-wrap gap-5 py-9">
-
-
           <div className="max-w-100 text-center md:text-left">
             <img
               src={logo}
@@ -21,7 +44,6 @@ const Footer = () => {
               {t("footer.text")}
             </p>
           </div>
-
 
           <div className="text-center md:text-left">
             <h2 className="font-bold mb-3 text-gray-600 uppercase text-sm">
@@ -70,16 +92,24 @@ const Footer = () => {
             <h2 className="font-bold mb-3 text-gray-600 uppercase">
               {t("footer.sub.title")}
             </h2>
-            <div className="flex justify-between items-center cursor-pointer border-2 border-gray-300 rounded-2xl px-2 py-2">
-              <input
-                type="email"
-                placeholder={t("footer.sub.title")}
-                className=" py-2 outline-none text-sm"
-              />
-              <button className="bg-red-400 cursor-pointer hover:shadow-[0_0_10px_#00000080] rounded-xl text-white px-4 py-2 text-[9px] md:text-sm hover:bg-red-500">
-                {t("footer.sub.btn")}
-              </button>
-            </div>
+            <form onSubmit={handleSubmit} action="">
+              <div className="flex justify-between items-center cursor-pointer border-1 border-gray-300 rounded-2xl px-2 py-2">
+                <input
+                  required
+                  type="text"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder={t("footer.sub.inp")}
+                  className=" outline-none text-[10px]"
+                />
+                <button
+                  type="submit"
+                  className="hover:bg-red-400 border cursor-pointer hover:shadow-[0_0_10px_#00000080] rounded-xl hover:text-white px-4 py-2 text-[9px] md:text-sm text-black"
+                >
+                  {t("footer.sub.btn")}
+                </button>
+              </div>
+            </form>
             <p className="text-xs mt-2 text-gray-500">{t("footer.sub.text")}</p>
           </div>
         </div>

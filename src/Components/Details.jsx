@@ -163,15 +163,15 @@ function Details() {
           />
         </div>
         <div>
-          <h1 className=" text-3xl font-bold pt-4 pb-5">{t(item?.title)}</h1>
+          <h1 className=" text-3xl text-center md:text-left font-bold pt-4 pb-5">{t(item?.title)}</h1>
           <table className="w-full table-auto border border-black border-collapse">
             <tbody>
               {base.map((item) => (
                 <tr key={item.id} className="border border-black">
-                  <td className="border text-sm md:text-md border-black px-4 py-4">
+                  <td className="border text-[10px] font-medium md:text-md pl-2 py-1 md:px-4 md:py-4">
                     {t(item.left)}
                   </td>
-                  <td className="border text-sm md:text-md border-black px-4 py-4">
+                  <td className="border text-[10px] font-medium md:text-md pl-2 py-1 md:px-4 md:py-4">
                     {t(item.right)}
                   </td>
                 </tr>

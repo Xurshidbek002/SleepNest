@@ -20,7 +20,7 @@ function Contact() {
     setModal(false);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => { 
     e.preventDefault();
     const newEmail = email.includes("@gmail.com")
       ? email

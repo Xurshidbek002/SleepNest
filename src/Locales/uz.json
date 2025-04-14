@@ -137,9 +137,9 @@
       "3": "Telegram: sleepnest"
     },
     "sub": {
-      "title": "Elektron pochtamizga obuna bo‘ling",
-      "inp": "Elektron pochtamizga obuna bo‘ling",
-      "btn": "Obuna bo‘lish",
+      "title": "Elektron pochtangizni yuboring",
+      "inp": "Elektron pochta yuborish",
+      "btn": "Yuborish",
       "text": "Hech bo‘lmaganda bitta ro‘yxatni tanlang.",
       "bottom": "© 2024 Ecological Clean Sleep Products MCHJ. Barcha huquqlar himoyalangan."
     }
@@ -182,6 +182,6 @@
     "phone": "Telefon raqamingiz",
     "message": "Xabaringiz bo‘lsa, yozing iltimos",
     "btn": "Yuborish",
-    "modal":"Muvaffaqiyatli Yuborildi"
+    "modal": "Muvaffaqiyatli Yuborildi"
   }
 }
