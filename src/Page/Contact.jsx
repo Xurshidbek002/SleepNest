@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { FaCheckDouble } from "react-icons/fa";
 import { GoCheckCircle } from "react-icons/go";
 import { IoClose } from "react-icons/io5";
-import { MdErrorOutline } from "react-icons/md";
+
+
+
+
 function Contact() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { t } = useTranslation();
 
-  // 👉 Email, telefon va xabar uchun holatlar (useState)
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
@@ -100,6 +104,7 @@ function Contact() {
               touchstart="passive"
             ></iframe>
           </div>
+          <div className=""></div>
         </div>
       </div>
       {modal && (

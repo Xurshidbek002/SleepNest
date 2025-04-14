@@ -10,9 +10,9 @@ function Summer() {
   const navigate = useNavigate();
   const { likedItems, toggleLike } = useLikeStore();
 
-  const handleNavigation = (id) => {
-    navigate(`/details/${id}`);
-  };
+    const handleNavigation = (id) => {
+      navigate(`/details/${id}`);
+    };
   return (
     <div className="py-2 md:py-10">
       <div className="container">

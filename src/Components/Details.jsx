@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Winter from "../data/Winter";
 import Autumn from "../data/Autumn";
 import Summer from "../data/Summer";
@@ -43,6 +43,10 @@ const base = [
 ];
 
 function Details() {
+  const navigate = useNavigate();
+  const handleNavigation = (id) => {
+    navigate(`/details/${id}`);
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -183,7 +187,7 @@ function Details() {
       {/* Review section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
         <div className="flex flex-col order-2 md:order-1">
-          <h2 className="text-3xl md:text-4xl text-center font-bold">
+          <h2 className="text-2xl md:text-4xl text-center font-bold">
             {t("detal.sh")}
           </h2>
           <div>
@@ -217,11 +221,13 @@ function Details() {
 
         {/* form izoh qoldirish uchun */}
         <div className="flex flex-col order-1 md:order-2">
-          <h2 className="text-3xl md:text-4xl text-center font-semibold">
+          <h2 className="text-2xl md:text-4xl text-center font-semibold">
             {t("detal.shq")}
           </h2>
           <form onSubmit={handleSubmit} className="space-y-4 p-4">
-            <label className=" text-gray-700 text-sm ">{t("detal.reting")}</label>
+            <label className=" text-gray-700 text-sm ">
+              {t("detal.reting")}
+            </label>
             <div className="flex items-center space-x-2">
               {[1, 2, 3, 4, 5].map((rating) => (
                 <MdStarRate
@@ -238,8 +244,11 @@ function Details() {
               ))}
             </div>
             <div>
-              <label className="pl-4 text-gray-700 text-sm">{t("detal.name")}</label>
+              <label className="pl-4 text-gray-700 text-sm">
+                {t("detal.name")}
+              </label>
               <input
+                required
                 type="text"
                 name="name"
                 value={formData.name}
@@ -248,8 +257,11 @@ function Details() {
               />
             </div>
             <div>
-              <label className="pl-4 text-gray-700 text-sm">{t("detal.email")}</label>
+              <label className="pl-4 text-gray-700 text-sm">
+                {t("detal.email")}
+              </label>
               <input
+                required
                 type="email"
                 name="email"
                 value={formData.email}
@@ -281,7 +293,7 @@ function Details() {
         </div>
       </div>
 
-      {/* Related products */}
+      {/* Related products */} 
       <div className="mt-10">
         <h2 className="text-2xl font-bold text-center">{t("detal.pro")}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-5">
@@ -290,7 +302,7 @@ function Details() {
               (likedItem) => likedItem.id === relatedItem.id
             );
             return (
-              <div key={relatedItem.id} className="relative">
+              <div onClick={()=>handleNavigation(relatedItem.id)} key={relatedItem.id} className="relative">
                 <button
                   onClick={() => toggleLike(relatedItem)}
                   className="absolute bg-white/80 text-red-500 w-8 h-8 flex items-center justify-center rounded-full top-2 right-2 z-3 text-xl"
