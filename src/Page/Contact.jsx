@@ -3,9 +3,6 @@ import { useTranslation } from "react-i18next";
 import { GoCheckCircle } from "react-icons/go";
 import { IoClose } from "react-icons/io5";
 
-
-
-
 function Contact() {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);

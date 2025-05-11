@@ -4,13 +4,15 @@ import ru from "../assets/ru.png";
 import en from "../assets/eng.png";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n";
-import logo from "../assets/logo.png";
+import logo from "../assets/noctella.png";
 import { NavLink } from "react-router-dom";
 import { RiMenu2Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
-import { motion } from "framer-motion";
+
 import { FcLike } from "react-icons/fc";
 import useLikeStore from "../store/likeStore";
+import { AnimatePresence, motion } from "framer-motion";
+
 const languages = [
   { code: "uz", img: uz },
   { code: "ru", img: ru },
@@ -49,9 +51,9 @@ function Header() {
   const orderedLangs = getLangOrder();
 
   return (
-    <div className="fixed shadow-md w-full z-100 bg-white py-3">
+    <header className="fixed shadow-xl shadow-amber-500/10 w-full z-100 bg-amber-500/20 backdrop-blur-xl py-3">
       <div className="container flex justify-between items-center gap-5">
-        <a href="/" className="">
+        <a href="/" className="z-51">
           <img src={logo} alt="" className="w-40" />
         </a>
         <div className="flex items-center gap-3 md:gap-9">
@@ -93,7 +95,7 @@ function Header() {
                 <FcLike size={23} />
                 {likedItems.length > 0 && (
                   <motion.span
-                    key={likedItems.length} 
+                    key={likedItems.length}
                     initial={{ scale: 1 }}
                     animate={{ scale: [4, 1] }} // Avval kattalashib, keyin qaytadi
                     transition={{ duration: 0.2, ease: "easeOut" }} // Animatsiya tezligi
@@ -125,72 +127,74 @@ function Header() {
           </button>
         </div>
       </div>
-      {open && (
-        <motion.div
-          initial={{ x: "-100%" }} // chapdan boshlanadi
-          animate={{ x: 0 }} // o‘ngga chiqadi
-          exit={{ x: "-100%" }} // yopilganda qaytadi
-          transition={{ duration: 0, ease: "easeInOut" }}
-          // className="fixed top-0 left-0 w-64 h-full bg-white shadow-lg z-50"
-        >
-          <div className="w-full h-screen bg-white flex flex-col items-center justify-start mt-10 gap-5 z-50">
-            <NavLink
-              onClick={toggleMenu}
-              to="/"
-              activeclassname="active"
-              className="text-gray-600 lg:text-[17px] text-xl"
-            >
-              {t("header.home")}
-            </NavLink>
-            <NavLink
-              onClick={toggleMenu}
-              to="/collection"
-              activeclassname="active"
-              className="text-gray-600 lg:text-[17px] text-xl"
-            >
-              {t("header.collection")}
-            </NavLink>
-            <NavLink
-              onClick={toggleMenu}
-              to="/about"
-              activeclassname="active"
-              className="text-gray-600 lg:text-[17px] text-xl"
-            >
-              {t("header.about")}
-            </NavLink>
-            <NavLink
-              onClick={toggleMenu}
-              to="/contact"
-              activeclassname="active"
-              className="text-gray-600 lg:text-[17px] text-xl"
-            >
-              {t("header.contact")}
-            </NavLink>
-            <NavLink
-              onClick={toggleMenu}
-              to="/like"
-              activeclassname="active"
-              className="text-gray-600 lg:text-[17px]"
-            >
-              <div className="relative">
-                <FcLike size={23} />
-                {likedItems.length > 0 && (
-                  <motion.span
-                    key={likedItems.length} // Har length o'zgarganda qayta animatsiya bo'lishi uchun
-                    initial={{ scale: 1 }}
-                    animate={{ scale: [3, 1] }} // Avval kattalashib, keyin qaytadi
-                    transition={{ duration: 0.2, ease: "easeOut" }} // Animatsiya tezligi
-                    className="absolute -top-2 -right-2 text-[8px] text-white flex justify-center items-center rounded-full w-5 h-5 bg-gray-600/70"
-                  >
-                    {likedItems.length}
-                  </motion.span>
-                )}
-              </div>
-            </NavLink>
-          </div>
-        </motion.div>
-      )}
-    </div>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ x: "-100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "-100%" }}
+            transition={{ duration: 0.3 }}
+            className="fixed top-0 left-0 w-64 h-full shadow-lg z-50"
+          >
+            <div className="w-full h-screen bg-white flex flex-col items-center pl-5 justify-start pt-40 gap-5 z-50">
+              <NavLink
+                onClick={toggleMenu}
+                to="/"
+                activeclassname="active"
+                className="text-gray-600 lg:text-[17px] text-xl"
+              >
+                {t("header.home")}
+              </NavLink>
+              <NavLink
+                onClick={toggleMenu}
+                to="/collection"
+                activeclassname="active"
+                className="text-gray-600 lg:text-[17px] text-xl"
+              >
+                {t("header.collection")}
+              </NavLink>
+              <NavLink
+                onClick={toggleMenu}
+                to="/about"
+                activeclassname="active"
+                className="text-gray-600 lg:text-[17px] text-xl"
+              >
+                {t("header.about")}
+              </NavLink>
+              <NavLink
+                onClick={toggleMenu}
+                to="/contact"
+                activeclassname="active"
+                className="text-gray-600 lg:text-[17px] text-xl"
+              >
+                {t("header.contact")}
+              </NavLink>
+              <NavLink
+                onClick={toggleMenu}
+                to="/like"
+                activeclassname="active"
+                className="text-gray-600 lg:text-[17px]"
+              >
+                <div className="relative">
+                  <FcLike size={23} />
+                  {likedItems.length > 0 && (
+                    <motion.span
+                      key={likedItems.length} // Har length o'zgarganda qayta animatsiya bo'lishi uchun
+                      initial={{ scale: 1 }}
+                      animate={{ scale: [3, 1] }} // Avval kattalashib, keyin qaytadi
+                      transition={{ duration: 0.2, ease: "easeOut" }} // Animatsiya tezligi
+                      className="absolute -top-2 -right-2 text-[8px] text-white flex justify-center items-center rounded-full w-5 h-5 bg-gray-600/70"
+                    >
+                      {likedItems.length}
+                    </motion.span>
+                  )}
+                </div>
+              </NavLink>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </header>
   );
 }
 

@@ -145,7 +145,7 @@ function Collection() {
                 {t("collection.collection")}
               </h3>
 
-              <div className="flex md:flex-col w-full overflow-x-scroll gap-5 mb-6 mt-5 whitespace-nowrap">
+              <div className="flex md:flex-col w-full overflow-x-auto gap-5 mb-6 mt-5 whitespace-nowrap">
                 {["all", "winter", "autumn", "summer"].map((season) => (
                   <button
                     key={season}
@@ -153,7 +153,7 @@ function Collection() {
                     className={`px-4 py-1 md:font-medium text-white ${
                       activeSeason === season
                         ? "bg-red-500 md:bg-transparent md:text-amber-300 text-white"
-                        : "bg-black md:bg-transparent md:text-black/60"
+                        : "bg-black/80 md:bg-transparent md:text-black/60"
                     } cursor-pointer md:p-0 rounded-2xl`}
                   >
                     {t(`collection.${season}`)}
@@ -169,7 +169,7 @@ function Collection() {
                 <ImSpinner className="text-9xl animate-spin" />
               </div>
             ) : (
-              <div className="container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5">
+              <div className="container grid grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5">
                 {filteredItems.length > 0 ? (
                   filteredItems.map((item) => {
                     const isLiked = likedItems.some(
@@ -191,14 +191,16 @@ function Collection() {
                           {isLiked ? <FaHeart /> : <FaRegHeart />}
                         </button>
                         <div>
-                          <div className="flex w-full h-40 rounded-xl overflow-hidden items-center justify-center ">
+                          <div className="flex w-full h-25 md:h-40 rounded-xl overflow-hidden items-center justify-center ">
                             <img
                               src={item.img}
                               alt={t(item.title)}
                               className="w-full h-full object-cover rounded-md transition-transform duration-300 hover:scale-107"
                             />
                           </div>
-                          <h2 className="text-md md:pt-1">{t(item.title)}</h2>
+                          <h2 className="text-[10px] md:text-[14px] md:pt-1">
+                            {t(item.title)}
+                          </h2>
                         </div>
                       </div>
                     );
