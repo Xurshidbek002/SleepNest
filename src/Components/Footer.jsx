@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/noctella.png";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
@@ -81,8 +81,8 @@ const Footer = () => {
               <p className="text-sm">{t("footer.contact.1")}</p>
               <p className="text-sm">{t("footer.contact.2")}</p>
               <p className="text-sm">{t("footer.contact.3")}</p>
-              <a href="tel:+998940337212" className="text-sm">
-                +998 94 033 72 12
+              <a href="tel:+998332221123" className="text-sm">
+                +998 33 222 11 23
               </a>
             </address>
           </div>
@@ -114,8 +114,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-[#17233e] text-white py-7">
-        <div className="container">{t("footer.sub.bottom")}</div>
+      <div className=" bg-[#17233e]/80 text-white py-3">
+        <div className="container text-[10px] text-center">{t("footer.sub.bottom")}</div>
       </div>
     </footer>
   );
